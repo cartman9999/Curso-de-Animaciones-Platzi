@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transiciones CSS</title>
+    <style>
+        .pelota {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transition: 1s;
+            position: absolute;
+        }
+        .pelota.a {
+            background-color: red;
+            left: 0px;
+
+        }
+        .pelota.b {
+            background-color: blue;
+            right: 0px;
+        }
+        .canasta {
+           border: 1px solid red; 
+           position: relative;
+           height: 200px;
+        }
+        .canasta:hover .pelota{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            /* background-color: red; */
+        }
+    </style>
+</head>
+<body>
+    <div class="canasta">
+        <div class="pelota a"></div>
+        <div class="pelota b"></div>
+    </div>
+</body>
+</html>
